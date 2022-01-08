@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: 'Merriweather', serif; 
+}
+body {
+   font-family: 'Open Sans', Arial, sans-serif;
+   font-size: 16px;
+}
+
+/* legend title style */
+legend {
+   background-color: #616161 ;
+   color: white;
+   font-weight: bold;
+   font-size: 24px;
+   padding: 4px;
+   text-align: center;
+   width: 90%;
+}
+
+/* fieldset formatting */
+fieldset {
+   background-color: #F5F5F5;
+   margin: 1em auto;
+   width: 90%;
+}
+
+/* box containers  formatting */
+div#searchBox, div#settingsBox, div#paintingBox {
+   background-color: #E0E0E0;
+   border: 1pt solid #616161;
+   margin: 0.25em auto;
+   padding: 16px;
+   width: 90%;
+}
+
+div#searchBox { 
+   margin-top: 1em; 
+}
+
+/* search box, submit button, and select formatting */
+input[type=search] {
+   height: 30px;
+   width: 35%;   
+}
+
+input[type=submit] {
+   height: 30px;  
+}
+
+select {
+   height: 30px;  
+}
+
+div#paintingBox { 
+   background-color: #EEEEEE;
+   margin-top: 20px; 
+}
+
+/* table formatting */
+table {
+   border-collapse: collapse; 
+   border-spacing: 0;
+   width: 100%;
+}
+
+table thead {
+    background-color: #E0E0E0 ;
+ }
+
+table thead th {
+   font-size: 18px;
+   padding: 5px 12px; 
+   text-align: left;
+}
+
+table tbody td{
+   border-top: 1pt solid #616161;   
+   line-height: 24px;
+   padding: 10px 12px;
+   vertical-align: middle;
+}
+
+table tbody td:first-child  {
+   padding: 10px 5px;
+   width: 10px;
+   text-align: center;
+}
+
+/* table img formatting */
+td img.border {
+   border: solid 1pt #616161; 
+   padding: 5px;
+}
+
+/* caption formatting */
+caption {
+   background-color: #BDBDBD;
+   font-weight: bold;
+   font-size: 22px;
+   padding: 10px;
+}
+
+/* table actions formatting */
+td button.bStyle {
+   margin: 1px;
+   height: 40px;
+   width: 40px;
+}

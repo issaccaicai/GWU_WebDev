@@ -1,0 +1,217 @@
+/* Top section styling*/
+.topHeaderRow {
+  background-color: #00084e;
+  height: 5rem;
+  padding-top: 1rem;
+  color: white;
+}
+.topHeaderRow a {
+  color: White;
+}
+.link:hover,
+.link:focus {
+  font-size: 2.3rem;
+
+}
+
+.topHeaderRow a:hover {
+  color: #40c4ff;
+  text-decoration: none;
+
+}
+
+/* navigation section styling*/
+.navbar-default {
+  background-color: #3d53dd;
+}
+
+.navbar {
+  position: relative;
+  min-height: 100px;
+  border: 1px solid transparent;
+  margin: 0 auto 50px;
+}
+
+.titleNav {
+  color: white;
+  float: left;
+  padding: 39px 15px;
+  font-size: 3rem;
+  line-height: 22px;
+  height: 100px;
+  font-family: 'Pangolin', cursive;;
+  
+}
+
+.titleNav:hover,
+.titleNav:focus {
+  font-size: 4rem;
+  color: Red;
+  background-color: transparent;
+  
+}
+
+
+/* Photo description section fromatting*/
+.photo-desc {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+
+/* Right section (Temple of Hephaistos) in main content styling*/
+.list-group a:hover{
+  color: blue;
+  text-decoration: none;
+  background-color: lightgreen;
+
+}
+.img-responsive {
+  width: 100%;
+  border-style: dotted;
+}
+.img-boder {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: rgb(165, 165, 165);
+}
+.zoom:hover {
+  transform: scale(0.8);
+}
+
+.ToH-list {
+  list-style-type: none;
+  font-weight: normal;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.ToH-list a {
+  background-color: white;
+}
+
+.ToH-list a:hover{
+  color: blue;
+  background-color: lightgreen;
+  text-decoration: none;
+
+}
+.img-styling {
+  width: 100%;
+}
+/* Button section (Under the Temple of Hephaistos) in main content styling*/
+.btn-group button {
+  background-color: White; 
+  border: 1px solid rgb(17, 17, 17); 
+  color: Black; 
+  padding: 8px 25px; 
+  cursor: pointer; 
+  float: left; 
+}
+
+/* Tags styling*/
+#tags {
+  line-height: 30px;
+  padding: 20px auto;
+
+}
+
+.label {
+  background-color: #6277f1;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: normal;
+}
+
+
+/* Related Photo section styling*/
+.postitionStyle, .img-position, .img-position2{
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+/* two images in one row whenever the screen is above 768px*/
+.img-position2 {
+  float: left;
+  width: 50%;
+}
+
+/* four images in one row when the screen gets less than 768px*/
+@media (min-width: 768px) {
+
+  .img-position {
+  float: left;
+  }
+
+  .img-position {
+    width: 25%
+  }
+}
+
+.align-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  border-color: black;
+}
+
+.thumbnail img{
+  margin: 20px auto;
+}
+
+/* Footer section formatting and styling*/
+footer {
+  background-color: #3d53dd;
+  color: white;
+  margin: 40px 0 0 0;
+}
+
+.btn {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.mediaStyle {
+  margin: 0 0 1px;
+}
+
+a:hover{
+  color: blue;
+  text-decoration: none;
+
+}
+
+.cicular {
+  border-radius: 50%;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+.btnStyle {
+  display: block;
+  width: 100%;
+}
+
+
+/* Copyright section styling*/
+.last-footer {
+  margin: 40px -20px 0 -20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding: 30px 20px 30px 20px;
+  background-color: #00084e;
+  text-align: center;
+}
+
+.last-footer a:hover{
+  color: rgb(0, 255, 21);
+  text-decoration: none;
+}

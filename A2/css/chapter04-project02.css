@@ -1,0 +1,163 @@
+/* body style */
+body {
+   font-family: "Roboto", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #ECEFF1;
+}
+
+/* header and nav style */
+nav#mainMenu {
+   background-color: #263238; 
+   font-size: 14px;
+   text-align: right;
+   padding-right: 95px;
+ }
+
+header {
+   background-image: url(/images/header-background.png);
+   background-repeat: repeat;
+}
+
+header h1 span {
+   color: #FF3D00;
+}
+
+header h1 {
+    font-size: 35px;
+    color: #ffffff;
+    padding: 10px 0 10px 95px;
+}
+
+nav#secondaryMenu {
+   background-color: #607D8B; 
+   font-size: 16px;
+   padding-left: 95px;
+ }
+
+nav ul li {
+   display: inline;
+}
+nav {
+   padding: 5px;
+}
+nav a {
+   padding: 5px;
+}
+
+/* font style */
+h2 { 
+   font-size: 25px; 
+}
+h3 { 
+   font-size: 18px; 
+   margin: 0 0 7px 0;
+}
+p {
+   font-size: 16px; 
+}
+
+/* a link style */
+a:link {
+   font-weight: bold;
+   color: #03A9F4;
+}
+a:hover {
+   background-color: #FF3D00;
+   color: #ffffff; 
+}
+
+/* link icons*/
+a[href^="mailto"] {
+   background: url(/images/email.png) no-repeat 0 3px;
+   padding-left:  1em;
+}
+a[href^="tel"] {
+   background: url(/images/call.png) no-repeat 0 3px;
+   padding-left:  1em;
+}
+
+/* article/section style */
+article>div {
+   background-color: #ffffff;
+   margin: 16px 95px 16px 95px;
+   text-align: center;
+}
+
+article>div img {
+   border: solid 0.5px #969696;
+   padding: 10px;
+   margin-top: 16px;
+}
+
+section {
+   background-color: #ffffff;
+   margin: 16px 95px 16px 95px;
+   border: solid 0.5pt #000000;
+}
+
+section h3 {
+   background-image: url(/images/header-background.png);
+   background-repeat: repeat;
+   color: #ffffff;
+   padding: 10px;
+}
+
+section em {
+   color: #797777;
+}
+
+section p {
+   margin-left: 10px;
+}
+section a:hover {
+   color: #32fc00; 
+}
+
+
+#chart img {
+    width: 100%;
+}
+
+/* actions buttons style */
+div.actions {
+   background-color: #607D8B; 
+   font-size: 11px;
+   padding: 11px;  
+   margin-top: 13px;
+}
+
+div.actions a {
+   background-color: #FF3D00;
+   color: white;
+   text-decoration: none;
+   border-radius: 3px;
+   margin-right: 3px;
+   padding: 6px 15px 6px 30px;
+   letter-spacing: 1px;
+}
+
+div.actions ul li{
+   display: inline;
+}
+
+.actionEdit {
+   background: url(/images/edit.png) no-repeat;
+   background-position: 5px 2px;
+}
+.actionFlag {
+   background: url(/images/flag.png) no-repeat;
+   background-position: 5px 2px;
+}
+
+/* footer style */
+footer {
+   background-color: #263238;
+   padding: 10px 0 10px 95px;
+   font-size: 14px;
+   color: white;
+}
+footer #copyright {
+   font-size: 11px;
+   font-style: italic;
+   margin-top: 3px;
+}

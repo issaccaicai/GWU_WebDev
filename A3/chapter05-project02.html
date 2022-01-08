@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="chapter05-project02.css" />
+</head>
+<body>
+    <form action="http://www.randyconnolly.com/tests/process.php" method="GET">
+        <fieldset>
+           <legend>Advanced Art Work Search</legend>
+
+           <!-- search box (search text, radio buttons, Genre list, and submit button)-->
+            <div id="searchBox">
+               <input type="search" name="search" placeholder="Search titles" />
+               Subject: 
+               <input type="radio" name="subject" value="1">History
+               <input type="radio" name="subject" value="2">Person
+               <input type="radio" name="subject" value="3">Landscape
+               <select name="filter">
+                  <option value="0" selected disabled>Select Genre</option>
+                  <option value="1">Baroque</option>
+                  <option value="2">Renaissance</option>   
+                  <option value="3">Realism</option>   
+               </select>
+               <input type="submit" value="Filter" />       
+            </div> 
+
+            <!-- settings box (Actions list, and submit button)-->
+            <div id="settingsBox">
+               <select name="actions">
+                  <option value="0" selected disabled>Bulk Actions</option>
+                  <option value="1">Archive</option>
+                  <option value="2">Edit</option>
+                  <option value="3">Delete</option>  
+                  <option value="4">Collection</option> 
+               </select>
+               <input type="submit" value="Apply To All" />
+            </div>
+
+            <!-- Painting box (Table with text, checkboxes, and buttons)-->
+            <div id="paintingBox">
+               <table>
+                  <caption>Paintings</caption>
+                  <thead>
+                     <tr>
+                        <th colspan="2"></th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Artist</th>    
+                        <th scope="col">Year</th> 
+                        <th scope="col">Genre</th> 
+                        <th scope="col">Actions</th> 
+                     </tr>
+                  </thead>
+                  <tbody>
+
+                     <tr>
+                        <td><input type="checkbox" name="index[]" value="10" /></td>
+                        <td><img src="images/05030.jpg" alt="Death of Marat" class="border"/></td>
+                        <td><em>Death of Marat</em></td>
+                        <td>David, Jacques-Louis</td>           
+                        <td>1793</td>
+                        <td>Romanticism</td>  
+                        <td>
+                            <button class="bStyle"><a href="#"><img src="images/archive.png" alt="Archive-img" title="Archive" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/edit.png" alt="Edit-img" title="Edit"/></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/delete.png" alt="Delete-img" title="Delete" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/collection.png" alt="Collection-img" title="Collection"/></a></button>
+                        </td>
+                     </tr>
+
+                     <tr>
+                        <td><input type="checkbox" name="index[]" value="20"/></td>
+                        <td><img src="images/120010.jpg" alt="Portrait of Eleanor of Toledo" class="border" /></td>
+                        <td><em>Portrait of Eleanor of Toledo</em></td>
+                        <td>Bronzino, Agnolo</td>           
+                        <td>1545</td>
+                        <td>Mannerism</td>  
+                        <td>
+                            <button class="bStyle"><a href="#"><img src="images/archive.png" alt="Archive-img" title="Archive" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/edit.png" alt="Edit-img" title="Edit"/></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/delete.png" alt="Delete-img" title="Delete" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/collection.png" alt="Collection-img" title="Collection"/></a></button>
+                        </td>
+                     </tr>  
+
+                     <tr>
+                        <td><input type="checkbox" name="index[]" value="30"/></td>
+                        <td><img src="images/07020.jpg" alt="Liberty Leading the People" class="border" /></td>
+                        <td><em>Liberty Leading the People</em></td>
+                        <td>Delacroix, Eugene</td>           
+                        <td>1830</td>
+                        <td>Romanticism</td>  
+                        <td>
+                            <button class="bStyle"><a href="#"><img src="images/archive.png" alt="Archive-img" title="Archive" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/edit.png" alt="Edit-img" title="Edit"/></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/delete.png" alt="Delete-img" title="Delete" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/collection.png" alt="Collection-img" title="Collection"/></a></button>
+                        </td>
+                     </tr>  
+
+                     <tr>
+                        <td><input type="checkbox" name="index[]" value="40"/></td>
+                        <td><img src="images/13030.jpg" alt="Arrangement in Grey and Black" class="border" /></td>
+                        <td><em>Arrangement in Grey and Black</em></td>
+                        <td>Whistler, James Abbott</td>           
+                        <td>1871</td>
+                        <td>Realism</td>  
+                        <td>
+                            <button class="bStyle"><a href="#"><img src="images/archive.png" alt="Archive-img" title="Archive" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/edit.png" alt="Edit-img" title="Edit"/></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/delete.png" alt="Delete-img" title="Delete" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/collection.png" alt="Collection-img" title="Collection"/></a></button>
+                        </td>
+                     </tr>  
+
+                     <tr>
+                        <td><input type="checkbox" name="index[]" value="50"/></td>
+                        <td><img src="images/06010.jpg" alt="Mademoiselle Caroline Riviere" class="border" /></td>
+                        <td><em>Mademoiselle Caroline Riviere</em></td>
+                        <td>Ingres, Jean-Auguste</td>           
+                        <td>1806</td>
+                        <td>Neo-Classicism</td>  
+                        <td>
+                            <button class="bStyle"><a href="#"><img src="images/archive.png" alt="Archive-img" title="Archive" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/edit.png" alt="Edit-img" title="Edit"/></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/delete.png" alt="Delete-img" title="Delete" /></a></button> 
+                            <button class="bStyle"><a href="#"><img src="images/collection.png" alt="Collection-img" title="Collection"/></a></button>
+                        </td>
+                     </tr>  
+
+                  </tbody>
+               </table>
+            </div> 
+
+        </fieldset>  
+        </form>
+</body>
+</html>
+
+CREATE TABLE Route_T(
+   RouteID int(5) NOT NULL,
+   RouteStartPoint varchar(30),
+   RouteEndPoint varchar(30),
+   RouteStandardDrivingTime int(5),
+
+   CONSTRAINT Route_PK PRIMARY KEY (RouteID)
+);
+
+CREATE TABLE Driver_T(
+   DriverID int(5) NOT NULL,
+   DriverFirstName varchar(10),
+   DriverLastName varchar(10),
+   DateDriverJoinedCompany date,
+   DriverDOB date,
+
+   CONSTRAINT Driver_PK PRIMARY KEY (DriverID)
+);
+
+CREATE TABLE Vehicle_T(
+   VehicleID int(5) NOT NULL,
+   VehicleMake varchar(20),
+   VehicleModel varchar(20),
+   VehiclePassengerCapacity int(3),
+
+   CONSTRAINT Vehicle_PK PRIMARY KEY (VehicleID)
+);
+
+CREATE TABLE Schedule_T(
+   ScheduleID varchar(10) NOT NULL,
+   ScheduleDate date,
+   ScheduleDepTime varchar(10),
+   ScheduleArrTime varchar(10),
+   RouteID int(5) NOT NULL,
+   DriverID int(5) NOT NULL,
+   VehicleID int(5) NOT NULL,
+
+   CONSTRAINT Schedule_PK PRIMARY KEY (ScheduleID),
+
+   CONSTRAINT Schedule_FK1 FOREIGN KEY (RouteID) 
+   REFERENCES Route_T(RouteID),
+   
+   CONSTRAINT Schedule_FK2 FOREIGN KEY (DriverID) 
+   REFERENCES Driver_T(DriverID),
+   
+   CONSTRAINT Schedule_FK3 FOREIGN KEY (VehicleID) 
+	REFERENCES Vehicle_T(VehicleID)
+);
+
+CREATE TABLE Certification_T(
+   DriverID int(5) NOT NULL,
+   VehicleID int(5) NOT NULL,
+   DriverCertStartDate date NOT NULL,
+   DriverCertEndDate date,
+
+   CONSTRAINT Certification_PK PRIMARY KEY (DriverID,
+   VehicleID, DriverCertStartDate),
+
+   CONSTRAINT Certification_FK1 FOREIGN KEY (DriverID) 
+   REFERENCES Driver_T(DriverID),
+   
+   CONSTRAINT Certification_FK2 FOREIGN KEY (VehicleID) 
+   REFERENCES Vehicle_T(VehicleID)
+);
+
+
+
+
+
+INSERT INTO Route_T (RouteID, RouteStartPoint, RouteEndPoint, RouteStandardDrivingTime) 
+   VALUES
+      (28, 'Grand Avenue', 'Madison St.', 38);
+
+
+INSERT INTO Driver_T (DriverID, DriverFirstName, DriverLastName, DateDriverJoinedCompany, DriverDOB) 
+   VALUES
+      (2343, 'Pat', 'Moore', '1982-02-24', '1958-01-19'),
+      (7234, 'John', 'Jones', '2011-10-12', '1991-12-15'),
+      (8273, 'Mary', 'Smith', '2007-05-02', '1974-03-23');
+
+
+
+INSERT INTO Vehicle_T (VehicleID, VehicleMake, VehicleModel, VehiclePassengerCapacity) 
+   VALUES
+      (1123, 'GreatTrucks', 'CityCoach', 58),
+      (4323, 'PowerTransport', 'MidiBus', 32),
+      (5673, 'GreatTrucks', 'CityCoach2', 62);
+
+
+INSERT INTO Schedule_T (ScheduleID, ScheduleDate, ScheduleDepTime, ScheduleArrTime, RouteID, DriverID, VehicleID) 
+   VALUES
+      ('Skd001', '2012-09-01', '8.30', '9.18', 28, 8273, 1123),
+      ('Skd002', '2012-09-12', '10.30', '11.08', 28, 2343, 4323),
+      ('Skd003', '2012-09-12', '9.30', '10.12', 28, 7234, 5673);
+
+
+
+INSERT INTO Certification_T (DriverID, VehicleID, DriverCertStartDate, DriverCertEndDate) 
+   VALUES
+      (2343, 4323, '2012-08-20', '2013-08-19'),
+      (7234, 5673, '2012-04-12', '2013-04-11'),
+      (8273, 1123, '2012-06-10', '2013-06-09');
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------
+
+CREATE TABLE STUDIO(
+   StudioID INT(5) NOT NULL,
+   StudioName VARCHAR(30),
+   StudioLocation VARCHAR(30),
+   StudioCEO VARCHAR(30),
+
+   CONSTRAINT STUDIO_PK PRIMARY KEY (StudioID)
+);
+
+
+CREATE TABLE DIRECTOR(
+   DirectorID INT(5) NOT NULL,
+   DirectorName VARCHAR(30),
+
+   CONSTRAINT DIRECTOR_PK PRIMARY KEY (DirectorID)
+);
+
+
+CREATE TABLE MOVIE(
+   MovieNbr INT(5) NOT NULL,
+   Title VARCHAR(50),
+   DirectorID INT(5) NOT NULL,
+   StudioID INT(5) NOT NULL,
+
+   CONSTRAINT MOVIE_PK PRIMARY KEY (MovieNbr),
+    
+   CONSTRAINT MOVIE_FK1 FOREIGN KEY (DirectorID) 
+   REFERENCES DIRECTOR(DirectorID),
+   
+   CONSTRAINT MOVIE_FK2 FOREIGN KEY (StudioID) 
+   REFERENCES STUDIO(StudioID)
+);
+
+
+
+
+
+CREATE TABLE ACTOR(
+   ActorID INT(5) NOT NULL,
+   ActorName VARCHAR(30),
+
+   CONSTRAINT ACTOR_PK PRIMARY KEY (ActorID)
+);
+
+
+
+
+CREATE TABLE CHARACTER_ROLE(
+   CharacterRoleID INT(5) NOT NULL,
+   Role_Character VARCHAR(30),
+   MovieNbr INT(5) NOT NULL,
+   ActorID INT(5) NOT NULL,
+
+   CONSTRAINT CHARACTER_ROLEE_PK PRIMARY KEY (CharacterRoleID),
+    
+   CONSTRAINT CHARACTER_ROLE_FK1 FOREIGN KEY (MovieNbr) 
+   REFERENCES MOVIE(MovieNbr),
+   
+   CONSTRAINT CHARACTER_ROLE_FK2 FOREIGN KEY (ActorID) 
+   REFERENCES ACTOR(ActorID)
+);
+
+
+
+CREATE TABLE MOVIE_LICENSE(
+   MovieLicenseNbr INT(5) NOT NULL,
+   MovieNbr INT(5) NOT NULL,
+   MovieLicenseType ENUM('Regular','HD'),
+   MovieRentalPrice DECIMAL(5,2),
+   LicenseRentalStatus VARCHAR(20),
+   LicenseReturnDate DATE,
+
+   CONSTRAINT MOVIE_LICENSE_PK PRIMARY KEY (MovieLicenseNbr, MovieNbr),
+    
+   CONSTRAINT MOVIE_LICENSE_FK1 FOREIGN KEY (MovieNbr) 
+   REFERENCES MOVIE(MovieNbr)
+);
+   
+
+
+
+
+
+INSERT INTO STUDIO (StudioID, StudioName, StudioLocation, StudioCEO) 
+VALUES
+   (234, 'Liberty Films', 'Hollywood, CA', 'Orson Wells');
+
+INSERT INTO DIRECTOR (DirectorID, DirectorName) 
+VALUES
+   (25, 'Franke Capra');
+
+INSERT INTO MOVIE (MovieNbr, Title, DirectorID, StudioID) 
+VALUES
+   (567, 'It’s a Wonderful Life', 25, 234);
+  
+INSERT INTO ACTOR (ActorID, ActorName) 
+VALUES
+   (245, 'James Steward'),
+   (765, 'Henry Travers'),
+   (325, 'Lionel Barrymore');
+
+INSERT INTO CHARACTER_ROLE (CharacterRoleID, Role_Character, MovieNbr, ActorID) 
+VALUES
+   (1001, 'George Bailey', 567, 245),
+   (1002, 'Clarence Oddbody', 567, 765),
+   (1003, 'Henry F. Potter', 567, 325);
+
+INSERT INTO MOVIE_LICENSE (MovieLicenseNbr, MovieNbr, MovieLicenseType, MovieRentalPrice, LicenseRentalStatus, LicenseReturnDate) 
+VALUES
+   (5434, 567, 'HD', 3.95, 'Rented', '2012-12-15');
