@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    background: #f2c541; 
+    font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
+  }
+  .background-styling {
+    margin: 0px auto;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0;
+    margin: 20px auto;
+  }
+  #reganTeam {
+    background-image: url("imgs/aboutusBackground.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .card-styling {
+    width: 70%;
+    margin: 0 auto 100px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background: #f2c541; 
+    color: white;
+  }
+  
+  
+
+  @media screen and (max-width: 850px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+  .hvrbox,
+  .hvrbox * {
+    box-sizing: border-box;
+  }
+  .hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
+  .hvrbox img {
+    max-width: 100%;
+  }
+  .hvrbox .hvrbox-layer_bottom {
+    display: block;
+  }
+  .hvrbox .hvrbox-layer_top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .hvrbox:hover .hvrbox-layer_top,
+  .hvrbox.active .hvrbox-layer_top {
+    opacity: 1;
+  }
+  .hvrbox .hvrbox-text {
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btn-text {
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btn-text:hover {
+text-decoration: none;
+color: white;
+  }
+  .hvrbox .hvrbox-text_mobile {
+    font-size: 15px;
+    border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+    border-top: 1px solid rgba(179, 179, 179, 0.7);
+    margin-top: 5px;
+    padding-top: 2px;
+    display: none;
+  }
+  .hvrbox.active .hvrbox-text_mobile {
+    display: block;
+  }
+  .hvrbox .hvrbox-layer_image {
+    padding: 0;
+    background: none;
+  }
+  .hvrbox .hvrbox-layer_scale {
+    border-radius: 50%;
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+  .hvrbox:hover .hvrbox-layer_scale,
+  .hvrbox.active .hvrbox-layer_scale {
+    border-radius: 0%;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+
+
+
+
+
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #003b5c;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  
+
+

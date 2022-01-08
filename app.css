@@ -1,0 +1,209 @@
+body {
+    background: #f2c541; 
+    font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.CarInfo h2 {
+   color: #003b5c;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.CarInfo p {
+    color: #003b5c;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;  
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #003b5c;
+    font-weight: 500;
+}
+
+#mainNavbar .navbar-brand {
+    color: #003b5c;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .navbar-brand:hover {
+    color: white;
+}
+
+
+#headingGroup span {
+    color: #003b5c;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #a89968;
+    transition: background 500ms;
+    height: 50px;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+.navbar.scrolled .bg-Style{
+    background-color: #a89968;
+}
+
+
+@media (max-width: 767px) {
+    .navbar.scrolled .bg-Style{
+        background-color: transparent;
+    }
+}
+
+
+
+.logo-Style {
+    font-family: 'Dancing Script', cursive;
+}
+
+.bg-Style {
+    background-color: transparent;
+    width: 30%;
+    border: none;
+    border-radius: 0;
+    margin: 0.4rem 0 0.5rem;
+    
+}
+
+.nav-link {
+    padding: 0 1rem;
+}
+.dropdown-menu {
+    padding: 0;
+}
+
+.bg-Color {
+    color: white;
+    font-weight: bold;
+}
+.bg-Style a:hover {
+    color:#003b5c;
+}
+
+.Slogan-styling {
+    font-size: 25px;
+    width: 80%;
+    color: #003b5c;
+    margin: 20px auto;
+}
+
+
+
+
+.Cars-Styling {
+    text-align: center;
+    font-family: "Montserrat-Bold";
+    color: #003b5c;
+}
+
+.card-header{
+    background-color: #a89968;
+}
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .pricing-column {
+    padding: 3% 2%;
+  }
+
+  .price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+.btn-outline-dark {
+
+    color: white;
+    background-color: #003b5c;
+}
+
+.btn-dark {
+    color: white;
+    background-color: #003b5c;
+}
+
+
+
+.colored-section {
+    background-color: #f2c541;
+    color: #fff;
+  }
+
+  #testimonials {
+    background-color: #f2c541;
+  }
+  .review-styling{
+    padding: 3% 15%;
+  }
+  
+.testimonial-text {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+  
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+
+.review-styling {
+    color: #003b5c;
+    font-family: "Montserrat-Bold";
+    text-align: center;
+}
+  
+
+
+
+/* Footer Section */
+.social-icon {
+    margin: 20px 10px;
+  }
+  
+ #footer .container-fluid{
+    padding: 3% 15%;
+  }
+  .footer-styling {
+      padding-bottom: 0;
+      text-align: center;
+    font-size: 25px;
+  background-color: #a89968;
+}

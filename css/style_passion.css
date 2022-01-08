@@ -1,0 +1,213 @@
+.navBarClass {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navBarItem {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.navBarImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navBarButton{
+    float:left;
+    font-size: 20px;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1;  /* Stay on top */
+    left: 0;
+    margin-top: 5px;
+    background-color: #003b5c; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.article{
+    width: 75%;
+}
+
+
+/*Gallery, compiled from SCSS*/
+.gallery-holder {
+    width: 100%;
+    margin: 60px auto;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 15vh);
+    grid-template-columns: repeat(2, 20vw);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    padding: 0.25em;
+    cursor: zoom-in;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+@media (min-width: 40em) {
+    .gallery {
+        grid-template-columns: repeat(5, 18vw);
+        grid-template-rows: repeat(2, 20vh);
+    }
+}
+@media (min-width: 60em) {
+    .gallery {
+        grid-template-columns: repeat(10, 8vw);
+        grid-template-rows: 25vh;
+    }
+}
+.gallery-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.15s ease;
+    position: relative;
+    box-shadow: 0 0 0 #0000;
+    opacity: 0.67;
+}
+.gallery-image:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.gallery-image:last-child {
+    border-radius: 0 0 10px 10px;
+}
+@media (min-width: 40em) and (max-width: 59.99em) {
+    .gallery-image:first-child {
+        border-radius: 10px 0 0 0;
+    }
+    .gallery-image:nth-child(5) {
+        border-radius: 0 10px 0 0;
+    }
+    .gallery-image:nth-child(6) {
+        border-radius: 0 0 10px 0;
+    }
+    .gallery-image:last-child {
+        border-radius: 0 0 0 10px;
+    }
+}
+@media (min-width: 60em) {
+    .gallery-image:first-child {
+        border-radius: 10px 0 0 10px;
+    }
+    .gallery-image:last-child {
+        border-radius: 0 10px 10px 0;
+    }
+}
+.gallery-image:hover {
+    opacity: 1;
+    z-index: 1;
+    box-shadow: 1em 1em 1em #0004;
+    transition: all 0.3s ease;
+    filter: sepia(0%) hue-rotate(0deg);
+    border-radius: 5px;
+    width: 300%;
+    height: 300%;
+    left: -100%;
+    top: -100%;
+}
+@media (min-width: 40em) {
+    .gallery-image:hover {
+        width: 250%;
+        height: 500%;
+        left: -75%;
+        top: -200%;
+    }
+}
+@media (min-width: 40em) and (orientation: portrait) {
+    .gallery-image:hover {
+        width: 300%;
+        height: 300%;
+        left: -100%;
+        top: -100%;
+    }
+}
+@media (min-width: 60em) {
+    .gallery-image:hover {
+        width: 350%;
+        height: 150%;
+        left: -75%;
+        top: -25%;
+    }
+    .gallery-image:hover ~ .gallery-image {
+        left: 175%;
+    }
+}
+@media (min-width: 60em) and (orientation: landscape) {
+    .gallery-image:hover {
+        width: 300%;
+        height: 300%;
+        left: -75%;
+        top: -100%;
+    }
+    .gallery-image:hover ~ .gallery-image {
+        left: 100%;
+    }
+}
